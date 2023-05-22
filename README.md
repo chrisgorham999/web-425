@@ -1,2 +1,4 @@
-# web-425
- Bellevue University WEB-425
+# WEB 425 Angular with TypeScript
+## Contributors
+* Professor Krasso
+* Chris Gorham
