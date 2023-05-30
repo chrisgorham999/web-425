@@ -1,1 +1,18 @@
-<p>composer-list works!</p>
+<div class="row">
+  <div class="col-sm-8">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Full name</th>
+          <th>Genre</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let composer of composers">
+        <tr>
+          <td>{{ composer.fullName }}</td>
+          <td>{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
