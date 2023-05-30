@@ -1,3 +1,14 @@
+/*
+======================================
+; Title: app-component.spec.ts
+; Author: Chris Gorham
+; Date: 30 May 2023
+; Description: This code supports functionality for the composer app
+; Sources Used:
+; Exercise 2.4 Instructions
+;=====================================
+*/
+
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';

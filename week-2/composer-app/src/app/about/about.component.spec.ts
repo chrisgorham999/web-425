@@ -1,3 +1,15 @@
+/*
+======================================
+; Title: about.component.spec.ts
+; Author: Chris Gorham
+; Date: 30 May 2023
+; Description: This code supports functionality for the about component of the composer app
+; Sources Used:
+; Exercise 2.4 Instructions
+;=====================================
+*/
+
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AboutComponent } from './about.component';
