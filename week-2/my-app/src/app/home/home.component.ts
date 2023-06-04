@@ -10,8 +10,10 @@
 ;=====================================
 */
 
+// imports
 import { Component, OnInit } from '@angular/core';
 
+// defines the component selector, html source, and CSS source
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

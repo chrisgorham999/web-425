@@ -10,8 +10,10 @@
 ;=====================================
 */
 
+// imports
 import { Component } from '@angular/core';
 
+// defines the component selector, html source, and CSS source
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
