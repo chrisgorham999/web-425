@@ -19,8 +19,10 @@
           <th class="black-header white-text">Genre</th>
         </tr>
       </thead>
+      <!-- Angular for loop to iterate over all composers-->
       <tbody *ngFor="let composer of composers">
         <tr>
+          <!-- Imports the full name and genre for each composer-->
           <td>{{ composer.fullName }}</td>
           <td>{{ composer.genre }}</td>
         </tr>

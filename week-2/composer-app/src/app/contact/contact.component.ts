@@ -9,8 +9,10 @@
 ;=====================================
 */
 
+// imports
 import { Component, OnInit } from '@angular/core';
 
+// defines where to look for the component's html and CSS
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',

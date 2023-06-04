@@ -9,8 +9,10 @@
 ;=====================================
 */
 
+// imports
 import { Component, OnInit } from '@angular/core';
 
+// creates the Composer class
 export default class Composer {
   fullName: string;
   genre: string;
@@ -21,7 +23,7 @@ export default class Composer {
   }
 }
 
-
+// defines where to look for the component's html and CSS
 @Component({
   selector: 'app-composer-list',
   templateUrl: './composer-list.component.html',
@@ -31,6 +33,7 @@ export class ComposerListComponent implements OnInit {
 
   composers: Array<Composer>;
 
+  // creates a list of composers
   constructor() {
     this.composers = [
       new Composer("Ludwig van Beethoven", "Classical"),
