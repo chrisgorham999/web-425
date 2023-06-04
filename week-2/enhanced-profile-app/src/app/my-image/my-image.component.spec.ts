@@ -10,6 +10,7 @@
 ;=====================================
 */
 
+// imports
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MyImageComponent } from './my-image.component';

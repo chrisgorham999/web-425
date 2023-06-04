@@ -10,8 +10,10 @@
 ;=====================================
 */
 
+// imports
 import { Component, OnInit } from '@angular/core';
 
+// creates the Person class
 export default class Person {
   fullName: string;
   favoriteFood: string;
@@ -30,6 +32,7 @@ export default class Person {
   }
 }
 
+// defines the component selector, html source, and CSS source
 @Component({
   selector: 'app-my-details',
   templateUrl: './my-details.component.html',

@@ -10,13 +10,17 @@
 ;=====================================
 */
 
+// imports
 import { Component, OnInit } from '@angular/core';
 
+// defines the component selector, html source, and CSS source
 @Component({
   selector: 'app-my-image',
   templateUrl: './my-image.component.html',
   styleUrls: ['./my-image.component.css']
 })
+
+// exports
 export class MyImageComponent implements OnInit {
 
   constructor() { }
