@@ -19,7 +19,11 @@ import { ComposerDetailsComponent } from './composer-details/composer-details.co
 
 // routes for the components
 const routes: Routes = [
-  { path: 'composer-list', component: ComposerListComponent }, {path: 'contact', component: ContactComponent }, {path: 'about', component: AboutComponent}, {path: 'composer-details/:composerId', component: ComposerDetailsComponent}
+  { path: '', redirectTo: '/composer-list', pathMatch: 'full'},
+  { path: 'composer-list', component: ComposerListComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent},
+  { path: 'composer-details/:composerId', component: ComposerDetailsComponent},
 ];
 
 @NgModule({
