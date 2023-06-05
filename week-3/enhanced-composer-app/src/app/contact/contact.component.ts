@@ -2,10 +2,10 @@
 ======================================
 ; Title: contact.component.ts
 ; Author: Chris Gorham
-; Date: 30 May 2023
-; Description: This code supports functionality for the contact component of the composer app
+; Date: 05 June 2023
+; Description: This code supports functionality for the contact component of the enhanced composer app
 ; Sources Used:
-; Exercise 2.4 Instructions
+; Exercise 3.2 Instructions
 ;=====================================
 */
 

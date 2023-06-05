@@ -2,7 +2,7 @@
 ======================================
 ; Title: app-component.ts
 ; Author: Chris Gorham
-; Date: 5 June 2023
+; Date: 05 June 2023
 ; Description: This code supports functionality for the enhanced composer app for exercise 3.2
 ; Sources Used:
 ; Exercise 3.2 Instructions
