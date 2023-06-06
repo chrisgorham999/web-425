@@ -3,9 +3,9 @@
 ; Title: app.module.ts
 ; Author: Chris Gorham
 ; Date: 06 June 2023
-; Description: This code supports functionality for the secure profile app
+; Description: This code supports functionality for the enhanced secure profile app
 ; Sources Used:
-; Exercise 3.3 Instructions
+; Assignment 3.4 Instructions
 ;=====================================
 */
 
