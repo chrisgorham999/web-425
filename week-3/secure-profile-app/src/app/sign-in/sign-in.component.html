@@ -1,0 +1,33 @@
+<!--
+======================================
+; Title: sign-in.component.html
+; Author: Chris Gorham
+; Date: 06 June 2023
+; Description: This code is for the 'sign-in' html portions of the secure profile app
+; Sources Used:
+; Exercise 3.3 Instructions
+=====================================
+-->
+
+<!--Boot strap card, styled through the sign-in css file-->
+<div class="card sign-in">
+  <div class="card-body">
+    <h3 class="card-title">Sign in</h3><br><br>
+    <form class="card-text">
+      <div class="form-group">
+        <label for="txtUserName">Username</label><br><br>
+        <input type="text" class="form-control" id="txtUserName" placeholder="Enter username"><br>
+      </div>
+
+      <div class="form-group">
+        <label for="txtPassword">Password</label><br><br>
+        <input type="password" class="form-control" id="txtPassword" placeholder="Enter your password"><br><br>
+      </div>
+
+      <div class="form-group floaty">
+        <!-- conducts the sign in function when clicked-->
+        <button class="btn btn-primary" (click)="signin()">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

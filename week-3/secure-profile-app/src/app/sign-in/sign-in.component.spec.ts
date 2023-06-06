@@ -1,9 +1,9 @@
 /*
 ======================================
-; Title: my-image.component.spec.ts
+; Title: sign-in.component.spec.ts
 ; Author: Chris Gorham
 ; Date: 06 June 2023
-; Description: This code supports functionality for the my-image component of the secure profile app
+; Description: This code supports functionality for the  sign-in component in the secure profile app
 ; Sources Used:
 ; Exercise 3.3 Instructions
 ;=====================================
@@ -11,21 +11,21 @@
 
 // imports
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MyImageComponent } from './my-image.component';
+import { SignInComponent } from './sign-in.component';
 
-describe('MyImageComponent', () => {
-  let component: MyImageComponent;
-  let fixture: ComponentFixture<MyImageComponent>;
+describe('SignInComponent', () => {
+  let component: SignInComponent;
+  let fixture: ComponentFixture<SignInComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MyImageComponent ]
+      declarations: [ SignInComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MyImageComponent);
+    fixture = TestBed.createComponent(SignInComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

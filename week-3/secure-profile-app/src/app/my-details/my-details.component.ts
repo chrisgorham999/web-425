@@ -2,11 +2,10 @@
 ======================================
 ; Title: my-details.component.ts
 ; Author: Chris Gorham
-; Date: 29 May 2023
-; Description: This code supports functionality for the my-details component of the profile picture app (part 2)
+; Date: 06 June 2023
+; Description: This code supports functionality for the my-details component of the secure profile app
 ; Sources Used:
-; Exercise 2.3 Instructions
-; Angular CLI Hello World YouTube Video (https://youtu.be/XRm0SnUJROU)
+; Exercise 3.3 Instructions
 ;=====================================
 */
 
