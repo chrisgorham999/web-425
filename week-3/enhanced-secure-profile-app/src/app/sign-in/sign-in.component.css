@@ -1,0 +1,21 @@
+/*
+======================================
+; Title: sign-in.component.css
+; Author: Chris Gorham
+; Date: 06 June 2023
+; Description: This code supports CSS functionality for the sign-in component for the secure profile app
+; Sources Used:
+; Exercise 3.3 Instructions
+;=====================================
+*/
+
+
+.sign-in {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.floaty {
+  text-align: right;
+}
