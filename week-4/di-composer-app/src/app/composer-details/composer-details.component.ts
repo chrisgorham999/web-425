@@ -26,6 +26,7 @@ export class ComposerDetailsComponent implements OnInit {
   composerId: number;
   composer: IComposer;
 
+  // adds in the private composer service to the constructor
   constructor(private route: ActivatedRoute, private composerService: ComposerService) {
     this.composerId = parseInt(this.route.snapshot.paramMap.get('composerId'), 10);
 

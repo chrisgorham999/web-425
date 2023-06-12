@@ -23,7 +23,7 @@ import { ComposerService } from '../composer.service';
 export class ComposerListComponent implements OnInit {
 
   composers: Array<IComposer>;
-
+  // for the di-composer-app this part is added to the constructor for the ComposerService
   constructor(private composerService: ComposerService) {
     this.composers = this.composerService.getComposers();
    }
