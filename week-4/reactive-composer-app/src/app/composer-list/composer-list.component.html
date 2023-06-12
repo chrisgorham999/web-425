@@ -1,0 +1,33 @@
+<!--
+======================================
+; Title: composer-list.component.html
+; Author: Chris Gorham
+; Date: 12 June 2023
+; Description: This code is for the html portions of the composer-list component for the di composer app project
+; Sources Used:
+; Exercise 4.2 Instructions
+=====================================
+-->
+
+<div class="row">
+  <div class="col-sm-8">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="black-header white-text">Composer Id</th>
+          <th class="black-header white-text">Full name</th>
+          <th class="black-header white-text">Genre</th>
+        </tr>
+      </thead>
+      <!-- Angular for loop to iterate over all composers-->
+      <tbody *ngFor="let composer of composers">
+        <tr>
+          <!-- Imports the composer id, full name and genre for each composer-->
+          <td><a routerLink="/composer-details/{{composer.composerId}}">{{ composer.composerId }}</a></td>
+          <td>{{ composer.fullName }}</td>
+          <td>{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

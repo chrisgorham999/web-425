@@ -1,0 +1,30 @@
+<!--
+======================================
+; Title: app.component.html
+; Author: Chris Gorham
+; Date: 12 June 2023
+; Description: This code is for the html portions of the di composer app project
+; Sources Used:
+; Exercise 4.2 Instructions
+=====================================
+-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="main" class="container">
+  <br><br><h2>Exercise 4.2 - Inversion of Control and Dependency Injection</h2>
+  <router-outlet></router-outlet>
+
+</div>
