@@ -1,17 +1,17 @@
 /*
 ======================================
-; Title: composer.class.ts
+; Title: composer.service.ts
 ; Author: Chris Gorham
-; Date: 05 June 2023
-; Description: This code supports functionality for the enhanced composer app exercise 3.2
+; Date: 12 June 2023
+; Description: This code supports functionality for the di composer app for exercise 4.2
 ; Sources Used:
-; Exercise 3.2 Instructions
+; Exercise 4.2 Instructions
 ;=====================================
 */
 
 // imports
+import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
-
 
 // creates the Composer class
 export class Composer {
@@ -42,4 +42,12 @@ export class Composer {
     }
     return {} as IComposer;
   }
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ComposerService {
+
+  constructor() { }
 }
