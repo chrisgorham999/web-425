@@ -2,17 +2,17 @@
 ======================================
 ; Title: composer-list.component.ts
 ; Author: Chris Gorham
-; Date: 05 June 2023
-; Description: This code supports functionality for the composer-list component of the enhanced composer app
+; Date: 12 June 2023
+; Description: This code supports functionality for the composer-list component of the di composer app
 ; Sources Used:
-; Exercise 3.2 Instructions
+; Exercise 4.2 Instructions
 ;=====================================
 */
 
 // imports
 import { Component, OnInit } from '@angular/core';
 import { IComposer} from '../composer.interface';
-import { Composer } from '../composer.class';
+import { ComposerService } from '../composer.service';
 
 // defines where to look for the component's html and CSS
 @Component({
@@ -24,8 +24,8 @@ export class ComposerListComponent implements OnInit {
 
   composers: Array<IComposer>;
 
-  constructor() {
-    this.composers = new Composer().getComposers();
+  constructor(private composerService: ComposerService) {
+    this.composers = this.composerService.getComposers();
    }
 
   ngOnInit(): void {

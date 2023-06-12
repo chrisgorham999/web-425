@@ -2,10 +2,10 @@
 ======================================
 ; Title: composer-details.component.ts
 ; Author: Chris Gorham
-; Date: 05 June 2023
-; Description: This code supports functionality for the composer-details component of the enhanced composer app
+; Date: 12 June 2023
+; Description: This code supports functionality for the composer-details component of the di composer app
 ; Sources Used:
-; Exercise 3.2 Instructions
+; Exercise 4.2 Instructions
 ;=====================================
 */
 
@@ -13,7 +13,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IComposer } from '../composer.interface';
-import { Composer } from '../composer.class';
+import { ComposerService } from '../composer.service';
 
 // defines where to look for the component's html and CSS
 @Component({
@@ -26,11 +26,11 @@ export class ComposerDetailsComponent implements OnInit {
   composerId: number;
   composer: IComposer;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private composerService: ComposerService) {
     this.composerId = parseInt(this.route.snapshot.paramMap.get('composerId'), 10);
 
     if (this.composerId) {
-      this.composer = new Composer().getComposer(this.composerId);
+      this.composer = this.composerService.getComposer(this.composerId);
     }
    }
 

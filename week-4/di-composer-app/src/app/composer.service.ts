@@ -13,8 +13,12 @@
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
 
-// creates the Composer class
-export class Composer {
+@Injectable({
+  providedIn: 'root'
+})
+
+// creates the Composer Service class
+export class ComposerService {
 
   composers: Array<IComposer>;
 
@@ -34,20 +38,11 @@ export class Composer {
   }
 
   // function that returns a specific composer based on composerId
-  getComposer(composerId: number) : IComposer {
+  getComposer(composerId: number) {
     for (let composer of this.composers) {
       if (composer.composerId === composerId) {
         return composer;
       }
     }
-    return {} as IComposer;
   }
-}
-
-@Injectable({
-  providedIn: 'root'
-})
-export class ComposerService {
-
-  constructor() { }
 }
