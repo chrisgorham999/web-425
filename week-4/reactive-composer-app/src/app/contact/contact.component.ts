@@ -3,9 +3,9 @@
 ; Title: contact.component.ts
 ; Author: Chris Gorham
 ; Date: 12 June 2023
-; Description: This code supports functionality for the contact component of the di composer app
+; Description: This code supports functionality for the contact component of the reactive composer app
 ; Sources Used:
-; Exercise 4.2 Instructions
+; Exercise 4.3 Instructions
 ;=====================================
 */
 

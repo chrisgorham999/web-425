@@ -3,9 +3,9 @@
 ; Title: app-component.ts
 ; Author: Chris Gorham
 ; Date: 12 June 2023
-; Description: This code supports functionality for the di composer app for exercise 4.2
+; Description: This code supports functionality for the reactive composer app for exercise 4.3
 ; Sources Used:
-; Exercise 4.2 Instructions
+; Exercise 4.3 Instructions
 ;=====================================
 */
 

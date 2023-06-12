@@ -3,9 +3,9 @@
 ; Title: app.module.ts
 ; Author: Chris Gorham
 ; Date: 12 June 2023
-; Description: This code supports functionality for the di composer app
+; Description: This code supports functionality for the reactive composer app
 ; Sources Used:
-; Exercise 4.2 Instructions
+; Exercise 4.3 Instructions
 ;=====================================
 */
 
@@ -20,6 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ComposerDetailsComponent } from './composer-details/composer-details.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
