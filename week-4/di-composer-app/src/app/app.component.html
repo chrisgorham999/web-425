@@ -1,0 +1,31 @@
+<!--
+======================================
+; Title: app.component.html
+; Author: Chris Gorham
+; Date: 05 June 2023
+; Description: This code is for the html portions of the enhanced composer app project
+; Sources Used:
+; Exercise 3.2 Instructions
+=====================================
+-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="main" class="container">
+  <!-- uses the assignment variable to post the assignment into the HTML-->
+  <br><br><h2>{{ assignment }}</h2>
+  <router-outlet></router-outlet>
+
+</div>

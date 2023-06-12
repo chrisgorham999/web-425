@@ -1,0 +1,18 @@
+/*
+======================================
+; Title: composer-list.component.css
+; Author: Chris Gorham
+; Date: 05 June 2023
+; Description: This code supports CSS functionality for the composer-list component of the enhanced composer app
+; Sources Used:
+; Exercise 3.2 Instructions
+;=====================================
+*/
+
+.black-header {
+  background-color: black;
+}
+
+.white-text {
+  color: white;
+}
