@@ -1,0 +1,20 @@
+/*
+======================================
+; Title: about.component.css
+; Author: Chris Gorham
+; Date: 12 June 2023
+; Description: This code supports CSS functionality for the about component of the reactive composer app
+; Sources Used:
+; Exercise 4.3 Instructions
+;=====================================
+*/
+
+.composer-bg {
+background-color: grey;
+}
+
+.composer-font {
+  color: white;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

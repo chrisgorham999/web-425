@@ -1,0 +1,24 @@
+<!--
+======================================
+; Title: composer-details.component.html
+; Author: Chris Gorham
+; Date: 12 June 2023
+; Description: This code is for the html portions of the composer-details component for the reactive composer app project
+; Sources Used:
+; Exercise 4.3 Instructions
+=====================================
+-->
+
+<div class="row">
+  <div class="col-sm-12">
+    <ul class="list-group">
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item">Full name: {{ composer.fullName}}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br>
+    <!--The router link should return users to the composer list page-->
+    <a routerLink="/composer-list">Return to Composers</a>
+  </div>
+</div>
+

@@ -1,0 +1,24 @@
+/*
+======================================
+; Title: composer-list.component.css
+; Author: Chris Gorham
+; Date: 12 June 2023
+; Description: This code supports CSS functionality for the composer-list component of the reactive composer app
+; Sources Used:
+; Exercise 4.3 Instructions
+;=====================================
+*/
+
+.black-header {
+  background-color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+.composer-input {
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}
