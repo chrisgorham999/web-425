@@ -2,10 +2,10 @@
 ======================================
 ; Title: composer-list.component.ts
 ; Author: Chris Gorham
-; Date: 12 June 2023
-; Description: This code supports functionality for the composer-list component of the reactive composer app
+; Date: 13 June 2023
+; Description: This code supports functionality for the composer-list component of the enterprise composer app
 ; Sources Used:
-; Exercise 4.3 Instructions
+; Assignment 4.4 Instructions
 ;=====================================
 */
 
@@ -15,7 +15,7 @@ import { IComposer} from '../composer.interface';
 import { ComposerService } from '../composer.service';
 import { FormControl } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators';
-
+import { Observable } from 'rxjs';
 
 // defines where to look for the component's html and CSS
 @Component({
@@ -24,8 +24,8 @@ import { debounceTime } from 'rxjs/operators';
   styleUrls: ['./composer-list.component.css']
 })
 export class ComposerListComponent implements OnInit {
-
-  composers: Array<IComposer>;
+  // updated in assignment 4.4 to be an observable
+  composers: Observable<IComposer[]>;
   // added for the reactive composer app for the search by name form control
   txtSearchControl = new FormControl('');
   // for the di-composer-app this part is added to the constructor for the ComposerService
@@ -40,7 +40,7 @@ export class ComposerListComponent implements OnInit {
   }
 
   filterComposers(name: string) {
-    alert(name);
+    this.composers = this.composerService.filterComposers(name);
   }
 
 }

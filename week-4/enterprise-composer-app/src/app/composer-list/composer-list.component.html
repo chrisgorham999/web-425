@@ -2,10 +2,10 @@
 ======================================
 ; Title: composer-list.component.html
 ; Author: Chris Gorham
-; Date: 12 June 2023
-; Description: This code is for the html portions of the composer-list component for the reactive composer app project
+; Date: 13 June 2023
+; Description: This code is for the html portions of the composer-list component for the enterprise composer app project
 ; Sources Used:
-; Exercise 4.3 Instructions
+; Assignment 4.4 Instructions
 =====================================
 -->
 
@@ -21,7 +21,7 @@
         </tr>
       </thead>
       <!-- Angular for loop to iterate over all composers-->
-      <tbody *ngFor="let composer of composers">
+      <tbody *ngFor="let composer of composers | async">
         <tr>
           <!-- Imports the composer id, full name and genre for each composer-->
           <td><a routerLink="/composer-details/{{composer.composerId}}">{{ composer.composerId }}</a></td>

@@ -2,16 +2,20 @@
 ======================================
 ; Title: composer.service.ts
 ; Author: Chris Gorham
-; Date: 12 June 2023
-; Description: This code supports functionality for the reactive composer app for exercise 4.3
+; Date: 13 June 2023
+; Description: This code supports functionality for the enterprise composer app for assignment 4.4
 ; Sources Used:
-; Exercise 4.3 Instructions
+; Assignment 4.4 Instructions
 ;=====================================
 */
 
 // imports
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
+import { Observable } from 'rxjs';
+import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
@@ -32,9 +36,9 @@ export class ComposerService {
       {composerId: 104, fullName: "Richard Wagner", genre: "Classical"}
     ]
   }
-  // function that returns all composers
-  getComposers() {
-    return this.composers;
+  // function that returns all composers; updated with the observable in assignment 4.4
+  getComposers(): Observable<IComposer[]> {
+    return of(this.composers);
   }
 
   // function that returns a specific composer based on composerId
@@ -45,4 +49,11 @@ export class ComposerService {
       }
     }
   }
-}
+
+  filterComposers(name: string): Observable<IComposer[]> {
+    return of(this.composers).pipe(
+      map(composers =>
+        composers.filter(composer => composer.fullName.toLowerCase().indexOf(name) > -1 )))
+      }
+  }
+
