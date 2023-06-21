@@ -11,10 +11,16 @@
 
 .a-link {
   text-decoration: none;
-  color: blue;
+  /* changed this to yellow to be a little easier on the eyes */
+  color: yellow;
 }
 
 .a-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* added this in to make the table look a little neater */
+.header-center {
+  text-align: center;
 }
