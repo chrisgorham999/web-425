@@ -1,3 +1,15 @@
+/*
+======================================
+; Title: app.component.spec.ts
+; Author: Chris Gorham
+; Date: 21 June 2023
+; Description: This code supports functionality for the In-N-Out Books Project (Part 1)
+; Sources Used:
+; Assignment 5.2 Instructions
+;=====================================
+*/
+
+// imports
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';

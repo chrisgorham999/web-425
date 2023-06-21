@@ -1,5 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+======================================
+; Title: contact.component.spec.ts
+; Author: Chris Gorham
+; Date: 21 June 2023
+; Description: This code supports functionality for the In-N-Out Books Project (Part 1)
+; Sources Used:
+; Assignment 5.2 Instructions
+;=====================================
+*/
 
+// imports
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ContactComponent } from './contact.component';
 
 describe('ContactComponent', () => {
