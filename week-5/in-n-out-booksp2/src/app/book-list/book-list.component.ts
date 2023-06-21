@@ -11,6 +11,9 @@
 
 // imports
 import { Component, OnInit } from '@angular/core';
+import { IBook } from '../book.interface';
+import { Observable } from 'rxjs';
+import { BooksService } from '../books.service';
 
 // sets the component selector, html, and css locations
 @Component({
@@ -21,9 +24,20 @@ import { Component, OnInit } from '@angular/core';
 // exports
 export class BookListComponent implements OnInit {
 
-  constructor() { }
+  books: Observable<IBook[]>;
+  header: Array<string> = ['isbn', 'title', 'numOfPages', 'authors']
+  book: IBook;
+
+  constructor(private booksService: BooksService) {
+    this.books = this.booksService.getBooks();
+   }
 
   ngOnInit(): void {
+  }
+  // show details function that retrieves the details for one book based on isbn input from the user
+  showBookDetails(isbn: string) {
+    this.book = this.booksService.getBook(isbn);
+    console.log(this.book);
   }
 
 }
