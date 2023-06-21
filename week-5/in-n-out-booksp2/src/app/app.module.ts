@@ -5,7 +5,7 @@
 ; Date: 21 June 2023
 ; Description: This code supports functionality for the In-N-Out Books Project (Part 1)
 ; Sources Used:
-; Assignment 5.2 Instructions
+; Exercise 5.3 Instructions
 ;=====================================
 */
 
@@ -24,6 +24,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+
 
 // declarations and module imports
 @NgModule({
@@ -42,7 +44,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatListModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
