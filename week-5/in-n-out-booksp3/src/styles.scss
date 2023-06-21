@@ -1,0 +1,15 @@
+/*
+======================================
+; Title: styles.scss
+; Author: Chris Gorham
+; Date: 21 June 2023
+; Description: This code supports functionality for the In-N-Out Books Project (Part 2)
+; Sources Used:
+; Exercise 5.3 Instructions
+;=====================================
+*/
+
+@import './theme';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
