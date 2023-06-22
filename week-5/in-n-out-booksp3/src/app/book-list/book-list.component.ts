@@ -14,6 +14,9 @@ import { Component, OnInit } from '@angular/core';
 import { IBook } from '../book.interface';
 import { Observable } from 'rxjs';
 import { BooksService } from '../books.service';
+import { MatDialog } from '@angular/material/dialog';
+import { BookDetailsDialogComponent } from '../book-details-dialog/book-details-dialog.component';
+
 
 // sets the component selector, html, and css locations
 @Component({
@@ -28,7 +31,7 @@ export class BookListComponent implements OnInit {
   header: Array<string> = ['isbn', 'title', 'numOfPages', 'authors']
   book: IBook;
 
-  constructor(private booksService: BooksService) {
+  constructor(private booksService: BooksService, private dialog: MatDialog) {
     this.books = this.booksService.getBooks();
    }
 
@@ -37,7 +40,19 @@ export class BookListComponent implements OnInit {
   // show details function that retrieves the details for one book based on isbn input from the user
   showBookDetails(isbn: string) {
     this.book = this.booksService.getBook(isbn);
+    // variable for our dialog for when the isbn is clicked
+    const dialogRef = this.dialog.open(BookDetailsDialogComponent, {
+      data: { book: this.book},
+      disableClose: true,
+      width: '800px'
+    })
     console.log(this.book);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === 'confirm') {
+        this.book = null;
+      }
+    });
   }
 
 }
