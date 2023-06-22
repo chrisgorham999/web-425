@@ -45,7 +45,7 @@ import { MatTableModule } from '@angular/material/table';
     MatListModule,
     FlexLayoutModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

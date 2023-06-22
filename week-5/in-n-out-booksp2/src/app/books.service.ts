@@ -23,7 +23,7 @@ export class BooksService {
     books: Array<IBook>;
 
   constructor() {
-  // creates the list of books
+  // creates the list of books and is the source for their data
   this.books =  [
     {isbn: "9780743273565", title: "The Great Gatsby", description: "The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan.", numOfPages: 208, authors: ["F. Scott Fitzgerald"]},
     {isbn: "43419454", title: "On The Road", description: "On the Road is a 1957 novel by American writer Jack Kerouac, based on the travels of Kerouac and his friends across the United States. It is considered a defining work of the postwar Beat and Counterculture generations, with its protagonists living life against a backdrop of jazz, poetry, and drug use. The novel is a roman à clef, with many key figures of the Beat movement, such as William S. Burroughs (Old Bull Lee), Allen Ginsberg (Carlo Marx), and Neal Cassady (Dean Moriarty) represented by characters in the book, including Kerouac himself as the narrator Sal Paradise.", numOfPages: 320, authors: ["Jack Kerouac"]},

@@ -3,9 +3,9 @@
 ; Title: app.component.ts
 ; Author: Chris Gorham
 ; Date: 21 June 2023
-; Description: This code supports functionality for the In-N-Out Books Project (Part 1)
+; Description: This code supports functionality for the In-N-Out Books Project (Part 3)
 ; Sources Used:
-; Exercise 5.3 Instructions
+; Assignment 5.4 Instructions
 ;=====================================
 */
 
@@ -23,6 +23,6 @@ export class AppComponent {
  assignment: string;
 
  constructor() {
-  this.assignment = "Exercise 5.3 - Data Tables";
+  this.assignment = "Assignment 5.4 - Dialogs";
  }
 }

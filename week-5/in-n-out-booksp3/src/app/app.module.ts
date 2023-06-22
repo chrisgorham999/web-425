@@ -3,9 +3,9 @@
 ; Title: app.module.ts
 ; Author: Chris Gorham
 ; Date: 21 June 2023
-; Description: This code supports functionality for the In-N-Out Books Project (Part 2)
+; Description: This code supports functionality for the In-N-Out Books Project (Part 3)
 ; Sources Used:
-; Exercise 5.3 Instructions
+; Assignment 5.4 Instructions
 ;=====================================
 */
 
@@ -25,6 +25,7 @@ import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
 
 
 // declarations and module imports
@@ -33,7 +34,8 @@ import { MatTableModule } from '@angular/material/table';
     AppComponent,
     AboutComponent,
     ContactComponent,
-    BookListComponent
+    BookListComponent,
+    BookDetailsDialogComponent
   ],
   imports: [
     BrowserModule,
