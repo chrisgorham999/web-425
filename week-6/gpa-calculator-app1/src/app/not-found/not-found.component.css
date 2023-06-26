@@ -1,0 +1,29 @@
+/*
+======================================
+; Title: not-found.component.css
+; Author: Chris Gorham
+; Date: 26 June 2023
+; Description: This code supports functionality for the GPA Calculator Project (Part 1)
+; Sources Used:
+; Exercise 6.3 Instructions
+;=====================================
+*/
+
+.not-found {
+  color: black;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.error {
+  text-align: center;
+  font-size: 5em;
+}
+
+

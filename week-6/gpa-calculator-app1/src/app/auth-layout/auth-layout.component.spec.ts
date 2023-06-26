@@ -1,5 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+======================================
+; Title: auth-layout.component.spec.ts
+; Author: Chris Gorham
+; Date: 26 June 2023
+; Description: This code supports functionality for the GPA Calculator Project (Part 1)
+; Sources Used:
+; Exercise 6.3 Instructions
+;=====================================
+*/
 
+// imports
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AuthLayoutComponent } from './auth-layout.component';
 
 describe('AuthLayoutComponent', () => {
