@@ -2,10 +2,10 @@
 ======================================
 ; Title: book-list.component.ts
 ; Author: Chris Gorham
-; Date: 21 June 2023
-; Description: This code supports functionality for the In-N-Out Books Project (Part 3)
+; Date: 26 June 2023
+; Description: This code supports functionality for the In-N-Out Books Project
 ; Sources Used:
-; Assignment 5.4 Instructions
+; Exercise 6.2 Instructions
 ;=====================================
 */
 

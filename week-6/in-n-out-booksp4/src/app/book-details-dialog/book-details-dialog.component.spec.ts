@@ -1,5 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+======================================
+; Title: book-details-dialog.component.spec.ts
+; Author: Chris Gorham
+; Date: 26 June 2023
+; Description: This code supports functionality for the In-N-Out Books Project
+; Sources Used:
+; Exercise 6.2 Instructions
+;=====================================
+*/
 
+// imports
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BookDetailsDialogComponent } from './book-details-dialog.component';
 
 describe('BookDetailsDialogComponent', () => {
