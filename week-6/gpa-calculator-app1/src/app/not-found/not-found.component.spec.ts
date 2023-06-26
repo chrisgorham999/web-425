@@ -1,5 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+/*
+======================================
+; Title: not-found.component.spec.ts
+; Author: Chris Gorham
+; Date: 26 June 2023
+; Description: This code supports functionality for the GPA Calculator App (Part 1)
+; Sources Used:
+; Exercise 6.3 Instructions
+;=====================================
+*/
 
+// imports
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NotFoundComponent } from './not-found.component';
 
 describe('NotFoundComponent', () => {

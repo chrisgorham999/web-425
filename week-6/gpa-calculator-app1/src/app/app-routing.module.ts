@@ -3,12 +3,13 @@
 ; Title: app-routing.module.ts
 ; Author: Chris Gorham
 ; Date: 26 June 2023
-; Description: This code supports functionality for the GPA Calculator Project (Part 1)
+; Description: This code supports functionality for the GPA Calculator App(Part 1)
 ; Sources Used:
 ; Exercise 6.3 Instructions
 ;=====================================
 */
 
+// imports
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';

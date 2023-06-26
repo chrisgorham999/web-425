@@ -1,3 +1,15 @@
+/*
+======================================
+; Title: app.component.spec.ts
+; Author: Chris Gorham
+; Date: 26 June 2023
+; Description: This code supports functionality for the GPA Calculator App (Part 1)
+; Sources Used:
+; Exercise 6.3 Instructions
+;=====================================
+*/
+
+// imports
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
