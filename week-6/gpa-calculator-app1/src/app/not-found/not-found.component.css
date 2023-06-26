@@ -18,12 +18,19 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
+  width: 20%;
 }
 
 .error {
   text-align: center;
   font-size: 5em;
+  color:red;
+}
+
+.error2 {
+  text-align: center;
+  font-size: 2em;
+  color:red;
 }
 
 
