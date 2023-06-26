@@ -1,6 +1,6 @@
 /*
 ======================================
-; Title: app.component.css
+; Title: wishlist-item.interface.ts
 ; Author: Chris Gorham
 ; Date: 26 June 2023
 ; Description: This code supports functionality for the In-N-Out Books Project
@@ -9,14 +9,8 @@
 ;=====================================
 */
 
-.logo {
-  margin-top: 5px;
+// creates IWishlistItem interface
+export interface IWishlistItem {
+  title: string;
+  authors: string;
 }
-
-.main-container {
-  padding-top: 25px;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-}
-

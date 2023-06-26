@@ -1,6 +1,6 @@
 /*
 ======================================
-; Title: app.component.css
+; Title: wishlist-create.component.css
 ; Author: Chris Gorham
 ; Date: 26 June 2023
 ; Description: This code supports functionality for the In-N-Out Books Project
@@ -9,14 +9,6 @@
 ;=====================================
 */
 
-.logo {
-  margin-top: 5px;
+.wishlist-create-form {
+  width: 60%;
 }
-
-.main-container {
-  padding-top: 25px;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-}
-

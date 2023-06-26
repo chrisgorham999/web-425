@@ -2,10 +2,10 @@
 ======================================
 ; Title: app.module.ts
 ; Author: Chris Gorham
-; Date: 21 June 2023
-; Description: This code supports functionality for the In-N-Out Books Project (Part 3)
+; Date: 26 June 2023
+; Description: This code supports functionality for the In-N-Out Books Project
 ; Sources Used:
-; Assignment 5.4 Instructions
+; Exercise 6.2 Instructions
 ;=====================================
 */
 
@@ -27,7 +27,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { WishlistCreateComponent } from './wishlist-create/wishlist-create.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 // declarations and module imports
 @NgModule({
@@ -36,7 +40,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutComponent,
     ContactComponent,
     BookListComponent,
-    BookDetailsDialogComponent
+    BookDetailsDialogComponent,
+    WishlistComponent,
+    WishlistCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +55,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     FlexLayoutModule,
     MatIconModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
