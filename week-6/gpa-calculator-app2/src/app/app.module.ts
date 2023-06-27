@@ -1,3 +1,15 @@
+/*
+======================================
+; Title: app.module.ts
+; Author: Chris Gorham
+; Date: 27 June 2023
+; Description: This code supports functionality for the GPA Calculator App(Part 2)
+; Sources Used:
+; Assignment 6.4 Instructions
+;=====================================
+*/
+
+// imports
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

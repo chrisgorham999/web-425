@@ -17,6 +17,7 @@ import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+// routes and paths
 const routes: Routes = [
   {
     path: '',

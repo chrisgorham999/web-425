@@ -1,4 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+======================================
+; Title: styles.css
+; Author: Chris Gorham
+; Date: 27 June 2023
+; Description: This code supports functionality for the GPA Calculator App(Part 2)
+; Sources Used:
+; Assignment 6.4 Instructions
+;=====================================
+*/
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

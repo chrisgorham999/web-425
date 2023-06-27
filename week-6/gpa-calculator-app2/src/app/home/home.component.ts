@@ -2,10 +2,10 @@
 ======================================
 ; Title: home.component.ts
 ; Author: Chris Gorham
-; Date: 26 June 2023
-; Description: This code supports functionality for the GPA Calculator App (Part 1)
+; Date: 27 June 2023
+; Description: This code supports functionality for the GPA Calculator App (Part 2)
 ; Sources Used:
-; Exercise 6.3 Instructions
+; Assignment 6.4 Instructions
 ;=====================================
 */
 
@@ -21,10 +21,12 @@ import { ITranscript } from '../transcript.interface';
 export class HomeComponent implements OnInit {
 
   transcriptEntry: ITranscript;
+  // sets the inputs for the drop down for the grades that the user can select
   selectableGrades: Array<string> = [
     "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"
   ];
   transcriptEntries: Array<ITranscript> = [];
+  // establishes the gpaTotal variable, sets it to 0 to start
   gpaTotal: number = 0;;
 
   constructor() {
@@ -40,7 +42,9 @@ export class HomeComponent implements OnInit {
     this.transcriptEntry = {} as ITranscript;
   }
 
+  // function that will calculate GPA based on the transcript entries and grades selected
   calculateResults() {
+    // local gpa variable for adding up entries
     let gpa: number = 0;
 
     for (let entry of this.transcriptEntries) {
@@ -84,7 +88,7 @@ export class HomeComponent implements OnInit {
     }
     this.gpaTotal = gpa / this.transcriptEntries.length;
   }
-
+  // resets the transcript when they click the clear transcript button
   clearEntries() {
     this.transcriptEntries = [];
     this.gpaTotal = 0;
