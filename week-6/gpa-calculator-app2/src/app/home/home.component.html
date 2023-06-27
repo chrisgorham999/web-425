@@ -11,6 +11,7 @@
 
 <div fxLayout="row wrap" fxLayoutGap="20px">
 
+  <!--Grade Entry-->
   <div class="grade-form" fxFlex>
     <mat-card>
       <mat-card-title>Grade Entry</mat-card-title>
@@ -27,18 +28,21 @@
               <mat-option *ngFor="let grade of selectableGrades" [value]="grade">{{ grade }}</mat-option>
             </mat-select>
           </mat-form-field>
-
+          <!--when clicked this calls the saveEntry() function and adds the entry to transcript portion-->
           <button mat-raised-button color="primary" (click)="saveEntry()">Save</button>
         </form>
       </mat-card-content>
     </mat-card>
   </div>
 
+  <!--Grade Summary-->
   <div fxFlex class="grade-summary">
+    <!--This button clears all transcript entries by calling the clearEntries() function-->
     <button mat-button color="primary" (click)="clearEntries()">Clear Transcript</button>
     <mat-card>
       <mat-card-title>Transcript</mat-card-title>
       <mat-card-content>
+        <!--Iterates over the transcript entries to have them added to the card-->
         <app-grade-summary *ngFor="let entry of transcriptEntries" [course]="entry.course" [grade]="entry.grade"></app-grade-summary>
       </mat-card-content>
     </mat-card>
@@ -49,9 +53,11 @@
 
 <br><br>
 
+<!--GPA-->
 <div fxLayout="column" fxLayoutGap="20px">
 
   <div fxFlex class="gpa">
+    <!--Clicking this calculates the GPA results by calling the calculateResults() function-->
     <button mat-button color="primary" (click)="calculateResults()">Calculate GPA</button>
 
     <mat-card>
