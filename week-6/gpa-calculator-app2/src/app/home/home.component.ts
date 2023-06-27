@@ -9,7 +9,6 @@
 ;=====================================
 */
 
-// imports
 import { Component, OnInit } from '@angular/core';
 import { ITranscript } from '../transcript.interface';
 
@@ -21,11 +20,9 @@ import { ITranscript } from '../transcript.interface';
 export class HomeComponent implements OnInit {
 
   transcriptEntry: ITranscript;
-  selectableGrades: Array<string>=[
-    'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'
-  ];
-  transcriptEntries: Array<ITranscript>= [];
-  gpaTotal: number = 0;
+  selectableGrades: Array<string> = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'];
+  transcriptEntries: Array<ITranscript> = [];
+  gpaTotal: number = 0;;
 
   constructor() {
     this.transcriptEntry = {} as ITranscript;
@@ -34,17 +31,17 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // pushes a transcript entry to the transcriptEntries variable
   saveEntry() {
     this.transcriptEntries.push(this.transcriptEntry);
     this.transcriptEntry = {} as ITranscript;
   }
-  // function to iterate over the transcript entries and add to the gpa variable
+
   calculateResults() {
     let gpa: number = 0;
 
     for (let entry of this.transcriptEntries) {
-      switch(this.transcriptEntry.grade) {
+      console.log(entry.grade)
+      switch(entry.grade) {
         case 'A':
           console.log('its an a')
           gpa += 4.0;
@@ -80,10 +77,15 @@ export class HomeComponent implements OnInit {
           gpa += 0.00;
           break;
       }
-    }}
-
-    clearEntries() {
-      this.transcriptEntries = [];
-      this.gpaTotal = 0;
     }
+
+    console.log(gpa);
+    this.gpaTotal = gpa / this.transcriptEntries.length;
+    console.log(this.gpaTotal);
+  }
+
+  clearEntries() {
+    this.transcriptEntries = [];
+    this.gpaTotal = 0;
+  }
 }

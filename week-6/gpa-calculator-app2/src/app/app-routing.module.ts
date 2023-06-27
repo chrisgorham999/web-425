@@ -22,15 +22,20 @@ const routes: Routes = [
     path: '',
     component: BaseLayoutComponent,
     children: [
-      {path: '',
-      component: HomeComponent}
+      {
+      path: '',
+      component: HomeComponent
+      }
     ]
   },
   {
     path: 'session',
     component: AuthLayoutComponent,
     children: [
-      {path: 'not-found', component: NotFoundComponent}
+      {
+        path: 'not-found',
+        component: NotFoundComponent
+      }
     ]
   },
   {
