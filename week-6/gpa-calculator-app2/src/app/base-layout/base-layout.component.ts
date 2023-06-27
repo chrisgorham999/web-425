@@ -3,9 +3,9 @@
 ; Title: base-layout.component.css
 ; Author: Chris Gorham
 ; Date: 26 June 2023
-; Description: This code supports functionality for the GPA Calculator App (Part 2)
+; Description: This code supports functionality for the GPA Calculator App (Part 1)
 ; Sources Used:
-; Assignment 6.4 Instructions
+; Exercise 6.3 Instructions
 ;=====================================
 */
 
@@ -22,7 +22,8 @@ export class BaseLayoutComponent implements OnInit {
   assignment: string;
 
   constructor() {
-    this.assignment = 'Assignment 6.4 - Input Properties';
+    // sets the assignment variable to the current assignment
+    this.assignment = 'Exercise 6.3 - Layouts';
    }
 
   ngOnInit(): void {

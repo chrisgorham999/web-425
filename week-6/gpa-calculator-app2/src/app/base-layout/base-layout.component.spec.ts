@@ -3,9 +3,9 @@
 ; Title: base-layout.component.spec.ts
 ; Author: Chris Gorham
 ; Date: 26 June 2023
-; Description: This code supports functionality for the GPA Calculator App (Part 2)
+; Description: This code supports functionality for the GPA Calculator App (Part 1)
 ; Sources Used:
-; Assignment 6.4 Instructions
+; Exercise 6.3 Instructions
 ;=====================================
 */
 
