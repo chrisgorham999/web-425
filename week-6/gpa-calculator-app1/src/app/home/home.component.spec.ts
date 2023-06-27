@@ -1,6 +1,6 @@
 /*
 ======================================
-; Title: base-layout.component.spec.ts
+; Title: home.component.spec.ts
 ; Author: Chris Gorham
 ; Date: 26 June 2023
 ; Description: This code supports functionality for the GPA Calculator App (Part 1)

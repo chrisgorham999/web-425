@@ -3,9 +3,9 @@
 ; Title: app.module.ts
 ; Author: Chris Gorham
 ; Date: 26 June 2023
-; Description: This code supports functionality for the GPA Calculator App (Part 1)
+; Description: This code supports functionality for the GPA Calculator App (Part 2)
 ; Sources Used:
-; Exercise 6.3 Instructions
+; Assignment 6.4 Instructions
 ;=====================================
 */
 
@@ -24,6 +24,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { MatButtonModule } from '@angular/material/button';
     MatToolbarModule,
     FlexLayoutModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatListModule,
+    FormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
