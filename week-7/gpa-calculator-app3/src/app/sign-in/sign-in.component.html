@@ -10,7 +10,7 @@
       <div class="msg-error" *ngIf="errorMessage">
         {{ errorMessage }}
       </div>
-        <mat-card class="mat-elevation-z0" fxLayout="columnn" fxLayoutGap="10px">
+        <mat-card class="mat-elevation-z0" fxLayout="column" fxLayoutGap="10px">
           <!--form group tells angular to look for the formGroup code in the typescript file; signinForm.reset clears out all form values-->
           <form [formGroup]="signinForm" (ngSubmit)="onSubmit(); signinForm.reset()">
             <mat-card-content>
