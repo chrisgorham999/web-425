@@ -2,15 +2,17 @@
 ======================================
 ; Title: base-layout.component.ts
 ; Author: Chris Gorham
-; Date: 27 June 2023
-; Description: This code supports functionality for the GPA Calculator App(Part 2)
+; Date: 03 July 2023
+; Description: This code supports functionality for the GPA Calculator App(Part 3)
 ; Sources Used:
-; Assignment 6.4 Instructions
+; Exercise 7.2 Instructions
 ;=====================================
 */
 
 // imports
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-base-layout',
@@ -20,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
 export class BaseLayoutComponent implements OnInit {
   assignment: string;
 
-  constructor() {
+  constructor(private cookieService: CookieService, private router: Router) {
   // sets the assignment variable to the current assignment
   this.assignment = "Exercise 7.2 - Reactive Forms";
   }
@@ -28,6 +30,12 @@ export class BaseLayoutComponent implements OnInit {
 
 
   ngOnInit(): void {
+  }
+
+  // signs out the user
+  signOut() {
+    this.cookieService.deleteAll();
+    this.router.navigate(['/session/sign-in']);
   }
 
 }

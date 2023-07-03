@@ -2,10 +2,10 @@
 ======================================
 ; Title: app-routing.module.ts
 ; Author: Chris Gorham
-; Date: 27 June 2023
-; Description: This code supports functionality for the GPA Calculator App(Part 2)
+; Date: 03 July 2023
+; Description: This code supports functionality for the GPA Calculator App(Part 3)
 ; Sources Used:
-; Assignment 6.4 Instructions
+; Exercise 7.2 Instructions
 ;=====================================
 */
 
@@ -16,6 +16,8 @@ import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignInGuard } from './sign-in.guard';
 
 // routes and paths
 const routes: Routes = [
@@ -25,13 +27,15 @@ const routes: Routes = [
     children: [
       {path: '',
       component: HomeComponent}
-    ]
+    ],
+    canActivate: [SignInGuard]
   },
   {
     path: 'session',
     component: AuthLayoutComponent,
     children: [
-      {path: 'not-found', component: NotFoundComponent}
+      {path: 'not-found', component: NotFoundComponent},
+      {path: 'sign-in', component: SignInComponent},
     ]
   },
   {

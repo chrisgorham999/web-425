@@ -2,10 +2,10 @@
 ======================================
 ; Title: app.module.ts
 ; Author: Chris Gorham
-; Date: 27 June 2023
-; Description: This code supports functionality for the GPA Calculator App(Part 2)
+; Date: 03 July 2023
+; Description: This code supports functionality for the GPA Calculator App(Part 3)
 ; Sources Used:
-; Assignment 6.4 Instructions
+; Exercise 7.2 Instructions
 ;=====================================
 */
 
@@ -29,8 +29,10 @@ import { GradeSummaryComponent } from './grade-summary/grade-summary.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { MatSelectModule } from '@angular/material/select';
     NotFoundComponent,
     HomeComponent,
     GpaComponent,
-    GradeSummaryComponent
+    GradeSummaryComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatInputModule,
     MatListModule,
     FormsModule,
-    MatSelectModule
+    MatSelectModule,
+    ReactiveFormsModule,
+    CookieService
   ],
   providers: [],
   bootstrap: [AppComponent]
