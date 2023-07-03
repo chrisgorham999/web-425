@@ -22,7 +22,7 @@ export class BaseLayoutComponent implements OnInit {
 
   constructor() {
   // sets the assignment variable to the current assignment
-  this.assignment = "Assignment 6.4 - Input Properties";
+  this.assignment = "Exercise 7.2 - Reactive Forms";
   }
 
 
