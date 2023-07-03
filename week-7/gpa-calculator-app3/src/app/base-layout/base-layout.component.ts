@@ -34,7 +34,9 @@ export class BaseLayoutComponent implements OnInit {
 
   // function for the user to sign out of the app
   signOut() {
-
+    this.cookieService.deleteAll();
+    // after deleting cookies this navigates the user back to the sign in page
+    this.router.navigate(['/session/sign-in']);
   }
 
 }
