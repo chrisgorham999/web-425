@@ -1,0 +1,21 @@
+/*
+======================================
+; Title: base-layout.component.css
+; Author: Chris Gorham
+; Date: 03 July 2023
+; Description: This code supports functionality for the GPA Calculator App(Part 3)
+; Sources Used:
+; Exercise 7.2 Instructions
+;=====================================
+*/
+
+
+.logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
