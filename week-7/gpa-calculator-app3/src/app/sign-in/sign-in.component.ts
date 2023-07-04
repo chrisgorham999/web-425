@@ -1,3 +1,15 @@
+/*
+======================================
+; Title: sign-in.component.ts
+; Author: Chris Gorham
+; Date: 03 July 2023
+; Description: This code supports functionality for the GPA Calculator App(Part 3)
+; Sources Used:
+; Exercise 7.2 Instructions
+;=====================================
+*/
+
+// imports
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';

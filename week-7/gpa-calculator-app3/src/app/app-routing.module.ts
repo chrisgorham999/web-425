@@ -3,9 +3,9 @@
 ; Title: app-routing.module.ts
 ; Author: Chris Gorham
 ; Date: 03 July 2023
-; Description: This code supports functionality for the GPA Calculator App(Part 2)
+; Description: This code supports functionality for the GPA Calculator App(Part 3)
 ; Sources Used:
-; Assignment 6.4 Instructions
+; Exercise 7.2 Instructions
 ;=====================================
 */
 
