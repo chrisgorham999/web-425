@@ -1,0 +1,19 @@
+<!--
+======================================
+; Title: monthly-payment.component.html
+; Author: Chris Gorham
+; Date: 12 July 2023
+; Description: This code supports functionality for the Loan App
+; Sources Used:
+; WEB-425 Capstone Instructions
+=====================================
+-->
+
+<div>
+  <div class="monthly-payment font-white">
+    Your monthly payment:
+  </div><br><br>
+  <div class="monthly-payment font-white">
+    {{ "$" + (monthlyPayment | number:'1.2-2') }}
+  </div>
+</div>

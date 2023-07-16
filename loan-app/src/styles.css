@@ -1,0 +1,97 @@
+/*
+======================================
+; Title: styles.css
+; Author: Chris Gorham
+; Date: 11 July 2023
+; Description: This code supports functionality for the Loan App Project
+; Sources Used:
+; WEB-425 Capstone Instructions
+;=====================================
+*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* backgrounds */
+.bg-green {
+  background-color: #1a472a;
+}
+
+.bg-grey {
+  background-color: #5d5d5d;
+}
+
+.bg-lighter-grey {
+  background-color: grey;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* font colors */
+
+.font-white {
+  color:white;
+}
+
+.font-yellow {
+  color: yellow;
+}
+
+.font-black {
+  color: black;
+}
+
+/* other stuff */
+
+.interest-paid {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 48px;
+}
+
+.monthly-payment {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 48px;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.results {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 48px;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 36px;
+}
+
+.msg-error {
+  margin: 10px 0;
+  padding: 12px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.padding-right {
+  padding-right: 80px;
+}

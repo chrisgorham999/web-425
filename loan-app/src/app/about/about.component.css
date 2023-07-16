@@ -1,0 +1,24 @@
+/*
+======================================
+; Title: about.component.css
+; Author: Chris Gorham
+; Date: 11 July 2023
+; Description: This code supports functionality for the Loan App Project
+; Sources Used:
+; WEB-425 Capstone Instructions
+;=====================================
+*/
+
+.loan-title {
+  color: yellow;
+}
+
+a {
+  color: #2196F3;
+}
+
+.history {
+  text-align: left;
+  color: white;
+  font-size: medium;
+}

@@ -1,0 +1,34 @@
+/*
+======================================
+; Title: not-found.component.css
+; Author: Chris Gorham
+; Date: 11 July 2023
+; Description: This code supports functionality for the Loan App Project
+; Sources Used:
+; WEB-425 Capstone Instructions
+;=====================================
+*/
+
+.not-found {
+  color: white;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.error {
+  text-align: center;
+  font-size: 5em;
+  color:yellow;
+}
+
+.error2 {
+  text-align: center;
+  font-size: 2em;
+  color:yellow;
+}

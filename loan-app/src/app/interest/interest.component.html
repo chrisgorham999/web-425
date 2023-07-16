@@ -1,0 +1,19 @@
+<!--
+======================================
+; Title: interest.component.html
+; Author: Chris Gorham
+; Date: 12 July 2023
+; Description: This code supports functionality for the Loan App
+; Sources Used:
+; WEB-425 Capstone Instructions
+=====================================
+-->
+
+<div>
+  <div class="interest-paid font-white">
+    Total interest paid:
+  </div><br><br>
+  <div class="interest-paid font-white">
+    {{ "$" + (interest | number:'1.2-2') }}
+  </div>
+</div>
